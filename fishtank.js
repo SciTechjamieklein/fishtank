@@ -75,10 +75,10 @@ function sSl() {
 function setup() {
   createCanvas(500, 500)
   fishCol = 1;
-  fimg = loadImage('realfish.png')
-  sand = loadImage('sand.png')
-  seaweed = loadImage('seaweed.png')
-  seaweedframe = loadImage('seaweedframe.png')
+  fimg = loadImage('/fishtank/realfish.png')
+  sand = loadImage('/fishtank/sand.png')
+  seaweed = loadImage('/fishtank/seaweed.png')
+  seaweedframe = loadImage('/fishtank/seaweedframe.png')
   fishColButton = createButton('change fish color')
   fishColButton.mouseClicked(changeFish)
   fishColButton.position(50, 625)
@@ -147,16 +147,16 @@ function draw() {
   if (txl == true) {
     fx = fx - sd;
     if (fishCol == 1) {
-      fimg = loadImage('flipfish.png')
+      fimg = loadImage('/fishtank/flipfish.png')
     } else {
       if (fishCol == 2) {
-        fimg = loadImage('altfishflip.png')
+        fimg = loadImage('/fishtank/altfishflip.png')
       } else {
         if (fishCol == 3) {
-          fimg = loadImage('altaltfishflip.png')
+          fimg = loadImage('/fishtank/altaltfishflip.png')
         } else {
           if (fishCol == 4) {
-            fimg = loadImage('greenflip.png')
+            fimg = loadImage('/fishtank/greenflip.png')
           }
         }
       }
@@ -192,16 +192,16 @@ function draw() {
   if (txs == true) {
     fx = fx + sd;
     if (fishCol == 1) {
-      fimg = loadImage('realfish.png')
+      fimg = loadImage('/fishtank/realfish.png')
     } else {
       if (fishCol == 2) {
-        fimg = loadImage('altfish.png')
+        fimg = loadImage('/fishtank/altfish.png')
       } else {
         if (fishCol == 3) {
-          fimg = loadImage('altaltfish.png')
+          fimg = loadImage('/fishtank/altaltfish.png')
         } else {
           if (fishCol == 4) {
-            fimg = loadImage('green.png')
+            fimg = loadImage('/fishtank/green.png')
           }
         }
       }
